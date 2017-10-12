@@ -34,6 +34,8 @@ export class AppComponent {
         icons: {
             menu: '<i class="fa fa-filter"/>'
         },
+
+        // Kevin, you can ignore everything below this - just test data
         onGridReady: (params) => {
             var httpRequest = new XMLHttpRequest();
             httpRequest.open('GET', 'https://raw.githubusercontent.com/ag-grid/ag-grid-docs/master/src/olympicWinnersSmall.json');
