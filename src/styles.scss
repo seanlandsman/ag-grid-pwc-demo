@@ -65,6 +65,10 @@ body, html {
     background-image: url('assets/down.svg');
 }
 
+// colored checkbox
+.ag-theme-material .ag-icon-checkbox-checked:empty {
+    background-image: url('assets/checkbox-checked.svg');
+}
 // removes the purple outline. Feel free to change 'transparent' to the color you like
 .ag-theme-material .ag-cell:focus {
     border: 1px solid transparent;
