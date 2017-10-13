@@ -30,11 +30,6 @@ export class AppComponent {
         groupDefaultExpanded: -1, // expand everything
         enableFilter: true,
         suppressMenuHide: true, // always show the menu
-        // Kevin, change the filter menu icon
-        icons: {
-            menu: '<i class="fa fa-filter"/>'
-        },
-
         // Kevin, you can ignore everything below this - just test data
         onGridReady: (params) => {
             var httpRequest = new XMLHttpRequest();

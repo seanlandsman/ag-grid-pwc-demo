@@ -50,3 +50,22 @@ body, html {
   font-style: italic;
   font-family: Georgia, serif;
 }
+
+// change the filter icon for menu
+.ag-theme-material .ag-icon-menu {
+    background-image: url('assets/hollow-filter.svg');
+}
+
+// these are the two icons used for sorting. 
+.ag-theme-material .ag-icon-asc {
+    background-image: url('assets/up.svg');
+}
+
+.ag-theme-material .ag-icon-desc {
+    background-image: url('assets/down.svg');
+}
+
+// removes the purple outline. Feel free to change 'transparent' to the color you like
+.ag-theme-material .ag-cell:focus {
+    border: 1px solid transparent;
+}
