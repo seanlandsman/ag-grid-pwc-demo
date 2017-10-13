@@ -55,8 +55,11 @@ body, html {
 .ag-theme-material .ag-icon-menu {
     background-image: url('assets/hollow-filter.svg');
 }
+.ag-theme-material .ag-icon-filter {
+    background-image: url('assets/hollow-filter.svg') !important;
+}
 
-// these are the two icons used for sorting. 
+// these are the two icons used for sorting.
 .ag-theme-material .ag-icon-asc {
     background-image: url('assets/up.svg');
 }

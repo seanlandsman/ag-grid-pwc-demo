@@ -2,6 +2,8 @@ import {Component} from '@angular/core';
 import {GridOptions} from "ag-grid/main";
 
 import 'ag-grid-enterprise/main';
+import {CustomFilterComponent} from "./custom.filter.component";
+import {HoverableLinkRenderer} from "./hoverable-link.component";
 
 @Component({
     selector: 'app-root',
@@ -50,9 +52,9 @@ export class AppComponent {
     constructor() {
         this.columnDefs = [
             {headerName: "Country", field: "country", width: 250, rowGroup: true, hide: true},
-            {headerName: "Year", field: "year", width: 120},
+            {headerName: "Year", field: "year", width: 120, filterFramework: CustomFilterComponent},
             {headerName: "Sport", field: "sport", width: 110},
-            {headerName: "Athlete", field: "athlete", width: 200},
+            {headerName: "Athlete", field: "athlete", width: 200, cellRendererFramework: HoverableLinkRenderer},
             {headerName: "Gold", field: "gold", width: 100},
             {headerName: "Silver", field: "silver", width: 100},
             {headerName: "Bronze", field: "bronze", width: 100},
