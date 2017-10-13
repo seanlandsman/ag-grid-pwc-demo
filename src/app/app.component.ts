@@ -28,6 +28,12 @@ export class AppComponent {
             headerClass: 'header-class',
             menuTabs: ['filterMenuTab'] // only show the filter
         },
+
+        // kevin to make the row bold based on another columns value
+        rowClassRules: {
+            'bold-row': function(params) {
+                return params.data && params.data.year === 2012},
+        },
         groupSelectsChildren: true,
         groupDefaultExpanded: -1, // expand everything
         enableFilter: true,
